@@ -12,4 +12,5 @@ class RawgRepository  @Inject constructor(
     suspend fun getFilteredGames(platforms: String?, genres: String?, ordering: String?, search: String?): List<Game> {
         return rawgRemoteDataSource.getFilteredGames(platforms, genres, ordering, search)?.filterNotNull() ?: emptyList()
     }
+
 }

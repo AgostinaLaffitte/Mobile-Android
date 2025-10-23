@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="navBackground">#213242</color>
-    <color name="navBar">#182737</color>
-    <color name="Bordernav">#9C27B0</color>
+    <color name="PrimaryColor">#182737</color>
+    <color name="button">#5B799D</color>
+    <color name="NavBackground">#5B799D</color>
+    <color name="Border">#A459B1</color>
+    <color name="red">#FF0000</color>
+    <color name="background_light">#CCC7C7</color>
+    <color name="surface_light">#A0CDF2</color>
+    <color name="text_color_primary">#FF000000</color>
+    <color name="text_color_secondary">#363637</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="informationSecondary">#363637</color>
 </resources>

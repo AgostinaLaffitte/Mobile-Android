@@ -10,7 +10,7 @@
         <item name="colorOnSurface">@color/text_color_primary</item>
 
         <item name="android:statusBarColor">@color/NavBackground</item>
-        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
 
     </style>
 

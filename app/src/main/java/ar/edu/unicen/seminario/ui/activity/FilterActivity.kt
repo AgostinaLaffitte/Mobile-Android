@@ -1,4 +1,4 @@
-package ar.edu.unicen.seminario.ui
+package ar.edu.unicen.seminario.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,12 +10,12 @@ import androidx.lifecycle.lifecycleScope
 import ar.edu.unicen.seminario.BuildConfig
 import ar.edu.unicen.seminario.R
 import ar.edu.unicen.seminario.databinding.FilterActivityBinding
+import ar.edu.unicen.seminario.ddl.data.Rawg.RawgApi
+import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import javax.inject.Inject
-import ar.edu.unicen.seminario.ddl.data.Rawg.RawgApi
-import com.google.android.material.chip.Chip
 
 @AndroidEntryPoint
 class FilterActivity : AppCompatActivity() {

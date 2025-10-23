@@ -11,12 +11,12 @@ data class GameDto(
     @SerializedName("background_image")
     val imageUrl: String?,
     @SerializedName("platforms")
-    val platforms: List<PlatformWrapper>
-    ) {
+    val platforms: List<PlatformWrapper>?
+) {
 }
 data class PlatformWrapper(
     @SerializedName("platform")
-    val platform: PlatformDto
+    val platform: PlatformDto?
 )
 
 fun GameDto.toGame(): Game {
@@ -24,6 +24,9 @@ fun GameDto.toGame(): Game {
         id = id,
         name = name,
         imageUrl = imageUrl,
-        platforms = platforms.map { it.platform.name }
+
+        platforms = platforms.orEmpty()
+            .filterNotNull()
+            .mapNotNull { it.platform?.name }
     )
-    }
+}

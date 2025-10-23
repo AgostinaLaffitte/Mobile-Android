@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Seminario</string>
-    <string name="recommended">recommended</string>
-    <string name="logo">logo</string>
-    <string name="filter">filter</string>
-    <string name="game_img">game image</string>
-    <string name="error_default">error</string>
-    <string name="search_hint">search hint</string>
+    <string name="recommended">Recommended</string>
+    <string name="logo">Logo</string>
+    <string name="filter">Filter</string>
+    <string name="game_img">Game image</string>
+    <string name="error_default">Error</string>
+    <string name="search_hint">Search hint</string>
+    <string name="filterError">Error loading filters. Please try again.</string>
+    <string name="TryAgain">Try again</string>
+    <string name="applyFilters">Apply filters</string>
+    <string name="OrdRating">Rating (Best)</string>
+    <string name="OrdDate">Date (Newest)</string>
+    <string name="OrdName">Name (A-Z)</string>
+    <string name="ordering">Ordering</string>
+    <string name="genres">Genres</string>
+    <string name="platforms">Platforms</string>
+    <string name="shareGame">Share game</string>
+    <string name="openWebside">Open webside</string>
+    <string name="synopsis">Synopsis:</string>
 </resources>

@@ -2,10 +2,22 @@
 
     <resources>
         <string name="app_name">Seminario</string>
-        <string name="recommended">recomendados</string>
-        <string name="logo">logo</string>
-        <string name="filter">filtrar</string>
-        <string name="game_img">imagen del juego</string>
-        <string name="error_default">error</string>
-    <string name="search_hint">buscar</string>
+        <string name="recommended">Recomendados</string>
+        <string name="logo">Logo</string>
+        <string name="filter">Filtrar</string>
+        <string name="game_img">Imagen del juego</string>
+        <string name="error_default">Error</string>
+        <string name="search_hint">Buscar</string>
+        <string name="filterError">Error al cargar filtros. Reintentá.</string>
+        <string name="TryAgain">Reintentar</string>
+        <string name="applyFilters">Aplicar filtros</string>
+        <string name="OrdRating">Calificacion (mejor)</string>
+        <string name="OrdDate">Fecha (mas nueva)</string>
+        <string name="OrdName">Nombre (A-Z)</string>
+        <string name="ordering">Ordenamiento</string>
+        <string name="genres">Generos</string>
+        <string name="platforms">Plataformas</string>
+        <string name="shareGame">Compartir juego</string>
+        <string name="openWebside">Abrir sitio web</string>
+        <string name="synopsis">Sinopsis:</string>
     </resources>

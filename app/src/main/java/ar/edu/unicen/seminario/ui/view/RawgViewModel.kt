@@ -1,4 +1,4 @@
-package ar.edu.unicen.seminario.ui
+package ar.edu.unicen.seminario.ui.view
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

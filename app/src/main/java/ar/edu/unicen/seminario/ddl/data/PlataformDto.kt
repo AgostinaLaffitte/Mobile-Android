@@ -8,7 +8,7 @@ data class PlatformsResponseDto(
 
 data class PlatformDto(
     @SerializedName("id")
-    val id: Int,
+    val id: Int?,
     @SerializedName("name")
-    val name: String
+    val name: String?
 )

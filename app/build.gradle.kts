@@ -69,7 +69,7 @@ dependencies {
     implementation(libs.retrofit.converter.gson)
     implementation(libs.glide)
 
-
+    implementation("com.google.code.gson:gson:2.10.1")
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

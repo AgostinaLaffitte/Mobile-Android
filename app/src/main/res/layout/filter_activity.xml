@@ -14,7 +14,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:text="Plataformas"
+                android:text="@string/platforms"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp"
@@ -30,7 +30,7 @@
                 app:chipSpacing="8dp" />
 
             <TextView
-                android:text="Géneros"
+                android:text="@string/genres"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp"
@@ -44,7 +44,7 @@
                 app:chipSpacing="8dp"
                 app:singleSelection="false" />
             <TextView
-                android:text="Ordenamiento"
+                android:text="@string/ordering"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="16dp"
@@ -57,35 +57,53 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:chipSpacing="8dp"
-                app:singleSelection="true"> <com.google.android.material.chip.Chip
+                app:singleSelection="true">
+                <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:id="@+id/chipOrderName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre (A-Z)"
+                android:text="@string/OrdName"
                 android:tag="name"
-                android:checked="true"/>
+                    app:chipBackgroundColor="@color/button"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="@color/Border"
+                android:checked="true"
+                    android:textColor="@color/text_color_primary"/>
                 <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:id="@+id/chipOrderReleasedDesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fecha (Más nuevo)"
-                android:tag="-released"/>
+                android:text="@string/OrdDate"
+                    app:chipBackgroundColor="@color/button"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="@color/Border"
+                android:tag="-released"
+                    android:textColor="@color/text_color_primary"/>
                 <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:id="@+id/chipOrderRatingDesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rating (Mejor)"
-                android:tag="-rating"/>
+                android:text="@string/OrdRating"
+                    app:chipBackgroundColor="@color/button"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="@color/Border"
+                android:tag="-rating"
+                    android:textColor="@color/text_color_primary"/>
 
             </com.google.android.material.chip.ChipGroup>
 
             <Button
                 android:id="@+id/buttonApplyFilters"
-                android:text="Aplicar filtros"
+                android:text="@string/applyFilters"
                 android:layout_marginTop="24dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:backgroundTint="@color/PrimaryColor"
+                android:textColor="@color/white"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/Border"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -105,7 +123,7 @@
         android:id="@+id/errorFilters"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Error al cargar filtros. Reintentá."
+        android:text="@string/filterError"
         android:textColor="@android:color/holo_red_dark"
         android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/progressBarFilters"
@@ -116,7 +134,7 @@
         android:id="@+id/buttonRetryFilters"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reintentar"
+        android:text="@string/TryAgain"
         android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/errorFilters"
         app:layout_constraintStart_toStartOf="parent"
