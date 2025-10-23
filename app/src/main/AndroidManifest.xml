@@ -22,10 +22,7 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".ui.activity.GameDetailActivity"
-            android:exported="false"
-            android:label="Detalle del Juego"/>
+
 
         <activity
             android:name=".ui.activity.FilterActivity"

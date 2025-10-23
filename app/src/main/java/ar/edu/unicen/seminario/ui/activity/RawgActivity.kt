@@ -49,7 +49,7 @@ class RawgActivity : AppCompatActivity() {
             insets
         }
 
-        // RecyclerView: inicializar una sola vez
+
         gamesAdapter = GameAdapter(emptyList())
         val orientation = resources.configuration.orientation
         val columns = if (orientation == Configuration.ORIENTATION_LANDSCAPE) 2 else 1
@@ -70,7 +70,7 @@ class RawgActivity : AppCompatActivity() {
             gamesAdapter.updateData(games)
         }.launchIn(lifecycleScope)
 
-        // Lanzador de FilterActivity
+
         filterLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == RESULT_OK) {
                 val data = result.data

@@ -1,6 +1,6 @@
 package ar.edu.unicen.seminario.ui
 
-import android.content.Intent
+
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View

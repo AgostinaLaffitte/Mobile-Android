@@ -62,7 +62,7 @@ class FilterActivity : AppCompatActivity() {
         return true
     }
     private fun obtenerOrdenamientoSeleccionado(chipGroup: ChipGroup): String? {
-        // Como es de selección única, solo necesitamos el ID del chip chequeado.
+
         val checkedChipId = chipGroup.checkedChipId
         return if (checkedChipId != View.NO_ID) {
             val chip = chipGroup.findViewById<Chip>(checkedChipId)
